@@ -1,49 +1,31 @@
 export const signatureScreens = [
   {
-    kicker: "Start with readiness",
-    title: "Build your marriage profile with care.",
-    body: "A calm onboarding flow gathers values, faith, goals, and the details mentors need before recommendations begin.",
+    kicker: "Profile",
+    title: "Build a profile with more than a photo.",
+    body: "MTM gathers faith, values, readiness, and practical context so introductions can begin with clarity.",
     image: "",
-    screen: "readiness",
-    stat: "72%",
+    screen: "profile",
+    stat: "84%",
     label: "profile clarity"
   },
   {
-    kicker: "Meet with context",
-    title: "See recommendations that explain the fit.",
-    body: "Profiles are designed to feel human and useful, with values, readiness notes, and shared anchors clearly surfaced.",
+    kicker: "Matches",
+    title: "See people worth considering with care.",
+    body: "Recommendations surface meaningful signals first, then let mutual interest open the next step.",
     image: "",
-    screen: "match",
+    screen: "matches",
     stat: "Fit",
     label: "reviewed match"
-  },
-  {
-    kicker: "Move intentionally",
-    title: "Mutual interest opens the next step.",
-    body: "MTM keeps the experience focused by letting both people choose before a guided conversation begins.",
-    image: "",
-    screen: "mutual",
-    stat: "7",
-    label: "days to chat"
-  },
-  {
-    kicker: "Stay mentored",
-    title: "Preparation remains part of the journey.",
-    body: "Members can keep learning, reflecting, and receiving guidance while the process unfolds.",
-    image: "",
-    screen: "mentor",
-    stat: "MTM",
-    label: "guided path"
   }
 ] as const;
 
 export const profileMarquee = [
-  { name: "Ada", age: "29", tag: "Faith-led", tone: "rose" },
-  { name: "Tomi", age: "33", tag: "Family-minded", tone: "gold" },
-  { name: "Kemi", age: "31", tag: "Ready to grow", tone: "sage" },
-  { name: "Daniel", age: "35", tag: "Intentional", tone: "blue" },
-  { name: "Mara", age: "28", tag: "Purposeful", tone: "clay" },
-  { name: "Femi", age: "34", tag: "Mentor-ready", tone: "green" },
-  { name: "Ife", age: "30", tag: "Clear values", tone: "pink" },
-  { name: "Nosa", age: "36", tag: "Covenant-minded", tone: "sand" }
+  { name: "Ada", age: "29", tag: "Faith-led", image: "/images/profiles/ada.jpg" },
+  { name: "Tomi", age: "33", tag: "Family-minded", image: "/images/profiles/tomi.jpg" },
+  { name: "Kemi", age: "31", tag: "Ready to grow", image: "/images/profiles/kemi.jpg" },
+  { name: "Daniel", age: "35", tag: "Intentional", image: "/images/profiles/daniel.jpg" },
+  { name: "Mara", age: "28", tag: "Purposeful", image: "/images/profiles/mara.jpg" },
+  { name: "Femi", age: "34", tag: "Mentor-ready", image: "/images/profiles/femi.jpg" },
+  { name: "Ife", age: "30", tag: "Clear values", image: "/images/profiles/ife.jpg" },
+  { name: "Nosa", age: "36", tag: "Covenant-minded", image: "/images/profiles/nosa.jpg" }
 ] as const;

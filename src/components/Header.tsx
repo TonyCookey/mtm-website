@@ -15,7 +15,6 @@ export function Header() {
   return (
     <header className="site-header">
       <a className="brand" href="#top" aria-label="Mentor To Marry home">
-        <span>MTM</span>
         <strong>Mentor To Marry</strong>
       </a>
       <nav className="desktop-nav" aria-label="Main navigation">

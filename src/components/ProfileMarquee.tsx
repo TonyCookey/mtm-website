@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { profileMarquee } from "@/content/homepage";
 
 export function ProfileMarquee() {
@@ -6,14 +7,13 @@ export function ProfileMarquee() {
   return (
     <section className="profiles" id="profiles" aria-label="MTM profiles preview">
       <div className="profiles__inner">
-        <p className="eyebrow">MTM Profiles</p>
-        <h2>Meet people who are preparing with intention.</h2>
+        <h2>Why Mentor To Marry?</h2>
         <div className="profiles__track-wrap">
           <div className="profiles__track">
             {profiles.map((profile, index) => (
-              <article className={`profile-chip profile-chip--${profile.tone}`} key={`${profile.name}-${index}`}>
-                <div className="profile-chip__avatar" aria-hidden>
-                  <span>{profile.name.slice(0, 1)}</span>
+              <article className="profile-chip" key={`${profile.name}-${index}`}>
+                <div className="profile-chip__avatar">
+                  <Image src={profile.image} alt="" fill sizes="150px" />
                 </div>
                 <div>
                   <strong>
@@ -25,6 +25,10 @@ export function ProfileMarquee() {
             ))}
           </div>
         </div>
+        <p className="profiles__copy">
+          It is a quieter way to prepare, meet, and discern: human enough for real connection,
+          structured enough for people who are serious about marriage.
+        </p>
       </div>
     </section>
   );

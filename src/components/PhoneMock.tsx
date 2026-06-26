@@ -23,8 +23,8 @@ export function PhoneMock({ kicker, title, body, image, screen, stat, label, act
         reduceMotion
           ? undefined
           : {
-              y: activeIndex % 2 === 0 ? 0 : 18,
-              rotate: activeIndex % 2 === 0 ? -1.5 : 1.5
+              y: activeIndex % 2 === 0 ? 0 : 12,
+              rotate: activeIndex % 2 === 0 ? -0.6 : 0.6
             }
       }
       transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
@@ -43,7 +43,7 @@ export function PhoneMock({ kicker, title, body, image, screen, stat, label, act
             {image ? (
               <Image src={image} alt={title} fill sizes="300px" className="phone__image" />
             ) : (
-              <PhonePlaceholder screen={screen} stat={stat} label={label} title={title} />
+              <PhonePlaceholder screen={screen} stat={stat} label={label} title={title} body={body} />
             )}
           </motion.div>
         </AnimatePresence>
@@ -52,30 +52,61 @@ export function PhoneMock({ kicker, title, body, image, screen, stat, label, act
   );
 }
 
-function PhonePlaceholder({ screen, stat, label, title }: { screen: string; stat: string; label: string; title: string }) {
+function PhonePlaceholder({
+  screen,
+  stat,
+  label,
+  title,
+  body
+}: {
+  screen: string;
+  stat: string;
+  label: string;
+  title: string;
+  body: string;
+}) {
+  const matches = screen === "matches";
+
   return (
     <div className="phone-placeholder">
       <div className="phone-placeholder__status">
         <span>9:41</span>
-        <span>MTM</span>
+        <span>Mentor To Marry</span>
       </div>
       <div className="phone-placeholder__hero">
-        <p>{screen}</p>
+        <p>{matches ? "Reviewed recommendation" : "Marriage profile"}</p>
+        <h4>{matches ? "A match worth slowing down for." : title}</h4>
+        <span>{body}</span>
+      </div>
+      <div className="phone-placeholder__metric">
         <strong>{stat}</strong>
         <span>{label}</span>
       </div>
-      <div className="phone-placeholder__body">
-        <h4>{title}</h4>
-        <div className="phone-placeholder__lines">
-          <span />
-          <span />
-          <span />
-        </div>
+      <div className={matches ? "phone-placeholder__profiles" : "phone-placeholder__cards"}>
+        {matches ? (
+          <>
+            <ProfileCard name="Ada" detail="Faith-led · Lagos" />
+            <ProfileCard name="Tomi" detail="Intentional · Abuja" />
+          </>
+        ) : (
+          <>
+            <span>Faith</span>
+            <span>Values</span>
+            <span>Readiness</span>
+          </>
+        )}
       </div>
-      <div className="phone-placeholder__cards">
-        <span />
-        <span />
-        <span />
+    </div>
+  );
+}
+
+function ProfileCard({ name, detail }: { name: string; detail: string }) {
+  return (
+    <div className="phone-profile-card">
+      <span>{name.slice(0, 1)}</span>
+      <div>
+        <strong>{name}</strong>
+        <small>{detail}</small>
       </div>
     </div>
   );

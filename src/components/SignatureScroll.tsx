@@ -46,25 +46,23 @@ export function SignatureScroll() {
   const screen = signatureScreens[active] ?? signatureScreens[0];
 
   return (
-    <section className="signature" id="app" ref={sectionRef}>
-      <div className="signature__inner">
-        <div className="signature__header">
-          <p className="eyebrow">The app experience</p>
-          <h2>A calmer way to move from preparation to connection.</h2>
+    <section className={`signature signature--${screen.screen}`} id="app" ref={sectionRef}>
+      <div className="signature__sticky">
+        <div className="signature__copy">
+          <p className="eyebrow">{screen.kicker}</p>
+          <h2>{screen.title}</h2>
+          <span>{screen.body}</span>
         </div>
-        <div className="signature__sticky">
+        <div className="signature__phone-wrap">
           <PhoneMock {...screen} activeIndex={active} />
         </div>
-        <div className="signature__steps">
-          {signatureScreens.map((item, index) => (
-            <article className={`signature__step ${active === index ? "is-active" : ""}`} key={item.title}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <p>{item.kicker}</p>
-              <h3>{item.title}</h3>
-              <small>{item.body}</small>
-            </article>
-          ))}
-        </div>
+      </div>
+      <div className="signature__steps" aria-hidden>
+        {signatureScreens.map((item, index) => (
+          <article className="signature__step" key={item.title}>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+          </article>
+        ))}
       </div>
     </section>
   );

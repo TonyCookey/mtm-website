@@ -29,11 +29,9 @@ export default function Home() {
           <div className="hero__veil" />
           <div className="hero__content page-grid">
             <Reveal className="hero__copy">
-              <p className="eyebrow">Mentor To Marry</p>
-              <h1>Meet with intention. Prepare with wisdom.</h1>
+              <h1>Mentor To Marry</h1>
               <p className="hero__lede">
-                A guided path for Christian singles who want mentoring, readiness, and
-                responsible introductions before the next step.
+                A guided path for Christian singles preparing for intentional marriage.
               </p>
               <div className="hero__actions">
                 <a className="button button--primary" href={ctas.primary.href}>
