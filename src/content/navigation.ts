@@ -1,19 +1,19 @@
 import { siteConfig } from "@/config/site.config";
 
 export const navigation = [
-  { label: "Method", href: "#method" },
-  { label: "Journey", href: "#journey" },
+  { label: "App", href: "#app" },
+  { label: "Profiles", href: "#profiles" },
   { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" }
 ] as const;
 
 export const ctas = {
   primary: {
-    label: "Start your journey",
+    label: "Start",
     href: siteConfig.appUrl
   },
   secondary: {
-    label: "See how it works",
-    href: "#journey"
+    label: "See the app",
+    href: "#app"
   }
 } as const;

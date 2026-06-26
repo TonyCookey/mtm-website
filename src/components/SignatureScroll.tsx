@@ -46,8 +46,12 @@ export function SignatureScroll() {
   const screen = signatureScreens[active] ?? signatureScreens[0];
 
   return (
-    <section className="signature" ref={sectionRef}>
+    <section className="signature" id="app" ref={sectionRef}>
       <div className="signature__inner">
+        <div className="signature__header">
+          <p className="eyebrow">The app experience</p>
+          <h2>A calmer way to move from preparation to connection.</h2>
+        </div>
         <div className="signature__sticky">
           <PhoneMock {...screen} activeIndex={active} />
         </div>

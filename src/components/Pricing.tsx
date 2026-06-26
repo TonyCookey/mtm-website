@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, CircleDollarSign } from "lucide-react";
+import { Check } from "lucide-react";
 import { useState } from "react";
 import { pricingPlans, type BillingCycle } from "@/content/pricing";
 import { siteConfig } from "@/config/site.config";
@@ -39,7 +39,6 @@ export function Pricing() {
         {pricingPlans.map((plan, index) => (
           <Reveal className={`price-card ${plan.featured ? "price-card--featured" : ""}`} delay={index * 0.08} key={plan.name}>
             <div className="price-card__top">
-              <CircleDollarSign size={22} aria-hidden />
               <span>{plan.tone}</span>
             </div>
             <h3>{plan.name}</h3>

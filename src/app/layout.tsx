@@ -33,10 +33,10 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "/images/hero-courtyard.png",
-        width: 1792,
-        height: 1024,
-        alt: "Mentor To Marry mentoring moment"
+        url: "/images/community-hero.jpg",
+        width: 1600,
+        height: 1065,
+        alt: "Young adults at a Mentor To Marry gathering"
       }
     ],
     locale: "en_NG",

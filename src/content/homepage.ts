@@ -1,58 +1,49 @@
-export const methodPillars = [
-  {
-    eyebrow: "01",
-    title: "Mentoring",
-    body: "Start with guided reflection, wise counsel, and practical preparation before anyone enters your shortlist."
-  },
-  {
-    eyebrow: "02",
-    title: "Matching",
-    body: "Recommendations are shaped by readiness, values, review, and mutual interest rather than casual browsing."
-  },
-  {
-    eyebrow: "03",
-    title: "Marriage readiness",
-    body: "The process keeps attention on character, accountability, clarity, and the decisions that matter after attraction."
-  }
-] as const;
-
-export const journeySteps = [
-  "Payment and onboarding",
-  "Mentoring begins",
-  "Assessments and profile review",
-  "Readiness feedback",
-  "Curated recommendations",
-  "Mutual match",
-  "Seven-day chat window"
-] as const;
-
 export const signatureScreens = [
   {
-    kicker: "Mentoring progress",
-    title: "Preparation before pressure",
-    body: "Members move through guided prompts and mentor checkpoints before recommendations are unlocked.",
+    kicker: "Start with readiness",
+    title: "Build your marriage profile with care.",
+    body: "A calm onboarding flow gathers values, faith, goals, and the details mentors need before recommendations begin.",
+    image: "",
+    screen: "readiness",
     stat: "72%",
-    label: "readiness profile"
+    label: "profile clarity"
   },
   {
-    kicker: "Recommended profile",
-    title: "Context beats chemistry alone",
-    body: "A recommendation comes with meaningful signals: values, readiness, faith, and mentor-reviewed fit.",
+    kicker: "Meet with context",
+    title: "See recommendations that explain the fit.",
+    body: "Profiles are designed to feel human and useful, with values, readiness notes, and shared anchors clearly surfaced.",
+    image: "",
+    screen: "match",
     stat: "Fit",
-    label: "values aligned"
+    label: "reviewed match"
   },
   {
-    kicker: "Safe explanation",
-    title: "Why this person, why now",
-    body: "Members see a clear explanation of why a recommendation may be worth prayerful consideration.",
-    stat: "3",
-    label: "shared anchors"
-  },
-  {
-    kicker: "Mutual match",
-    title: "The chat opens only when interest is mutual",
-    body: "When both people choose to continue, a focused seven-day chat window begins with intention.",
+    kicker: "Move intentionally",
+    title: "Mutual interest opens the next step.",
+    body: "MTM keeps the experience focused by letting both people choose before a guided conversation begins.",
+    image: "",
+    screen: "mutual",
     stat: "7",
-    label: "days to discern"
+    label: "days to chat"
+  },
+  {
+    kicker: "Stay mentored",
+    title: "Preparation remains part of the journey.",
+    body: "Members can keep learning, reflecting, and receiving guidance while the process unfolds.",
+    image: "",
+    screen: "mentor",
+    stat: "MTM",
+    label: "guided path"
   }
+] as const;
+
+export const profileMarquee = [
+  { name: "Ada", age: "29", tag: "Faith-led", tone: "rose" },
+  { name: "Tomi", age: "33", tag: "Family-minded", tone: "gold" },
+  { name: "Kemi", age: "31", tag: "Ready to grow", tone: "sage" },
+  { name: "Daniel", age: "35", tag: "Intentional", tone: "blue" },
+  { name: "Mara", age: "28", tag: "Purposeful", tone: "clay" },
+  { name: "Femi", age: "34", tag: "Mentor-ready", tone: "green" },
+  { name: "Ife", age: "30", tag: "Clear values", tone: "pink" },
+  { name: "Nosa", age: "36", tag: "Covenant-minded", tone: "sand" }
 ] as const;
