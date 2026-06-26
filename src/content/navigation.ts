@@ -1,7 +1,6 @@
 import { siteConfig } from "@/config/site.config";
 
 export const navigation = [
-  { label: "App", href: "#app" },
   { label: "Profiles", href: "#profiles" },
   { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" }
@@ -13,7 +12,7 @@ export const ctas = {
     href: siteConfig.appUrl
   },
   secondary: {
-    label: "See the app",
+    label: "Profiles",
     href: "#app"
   }
 } as const;

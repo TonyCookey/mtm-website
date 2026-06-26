@@ -38,9 +38,6 @@ export default function Home() {
                   {ctas.primary.label}
                   <ArrowRight size={18} aria-hidden />
                 </a>
-                <a className="button button--ghost" href={ctas.secondary.href}>
-                  {ctas.secondary.label}
-                </a>
               </div>
             </Reveal>
             <Reveal className="hero__proof" delay={0.14}>
@@ -66,7 +63,7 @@ export default function Home() {
               <blockquote>
                 “The goal is not simply to meet someone. The goal is to become ready for the kind of marriage you are praying for.”
               </blockquote>
-              <p>Founder note</p>
+              <p>Kingsley Okonkwo</p>
             </Reveal>
           </div>
         </SectionShell>

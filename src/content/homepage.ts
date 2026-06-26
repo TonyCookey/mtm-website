@@ -21,11 +21,11 @@ export const signatureScreens = [
 
 export const profileMarquee = [
   { name: "Ada", age: "29", tag: "Faith-led", image: "/images/profiles/ada.jpg" },
-  { name: "Tomi", age: "33", tag: "Family-minded", image: "/images/profiles/tomi.jpg" },
+  { name: "Maya", age: "33", tag: "Family-minded", image: "/images/profiles/tomi.jpg" },
   { name: "Kemi", age: "31", tag: "Ready to grow", image: "/images/profiles/kemi.jpg" },
-  { name: "Daniel", age: "35", tag: "Intentional", image: "/images/profiles/daniel.jpg" },
-  { name: "Mara", age: "28", tag: "Purposeful", image: "/images/profiles/mara.jpg" },
-  { name: "Femi", age: "34", tag: "Mentor-ready", image: "/images/profiles/femi.jpg" },
+  { name: "Ethan", age: "35", tag: "Intentional", image: "/images/profiles/daniel.jpg" },
   { name: "Ife", age: "30", tag: "Clear values", image: "/images/profiles/ife.jpg" },
-  { name: "Nosa", age: "36", tag: "Covenant-minded", image: "/images/profiles/nosa.jpg" }
+  { name: "Sofia", age: "28", tag: "Purposeful", image: "/images/profiles/mara.jpg" },
+  { name: "Nosa", age: "36", tag: "Covenant-minded", image: "/images/profiles/nosa.jpg" },
+  { name: "Noah", age: "34", tag: "Mentor-ready", image: "/images/profiles/femi.jpg" }
 ] as const;
