@@ -27,8 +27,8 @@ export function SignatureScroll() {
         panels.forEach((panel, index) => {
           ScrollTrigger.create({
             trigger: panel,
-            start: "top center",
-            end: "bottom center",
+            start: "top 72%",
+            end: "bottom 72%",
             onEnter: () => setActive(index),
             onEnterBack: () => setActive(index)
           });

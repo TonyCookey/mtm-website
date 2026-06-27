@@ -15,7 +15,9 @@ export function Header() {
   return (
     <header className="site-header">
       <a className="brand" href="#top" aria-label="Mentor To Marry home">
-        <strong>Mentor To Marry</strong>
+        <strong>
+          Mentor <span>To</span> Marry
+        </strong>
       </a>
       <nav className="desktop-nav" aria-label="Main navigation">
         {navigation.map((item) => (
@@ -23,10 +25,10 @@ export function Header() {
             {item.label}
           </a>
         ))}
+        <a className="desktop-nav__start" href={ctas.primary.href}>
+          Start
+        </a>
       </nav>
-      <a className="header-cta" href={ctas.primary.href}>
-        Start
-      </a>
       <button className="icon-button menu-button" type="button" onClick={() => setOpen(true)} aria-label="Open menu">
         <Menu size={22} aria-hidden />
       </button>

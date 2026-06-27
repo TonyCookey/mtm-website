@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, Check, Mail, MessageCircle } from "lucide-react";
+import { ArrowRight, ArrowUp, Check, Mail, MessageCircle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Header } from "@/components/Header";
 import { Pricing } from "@/components/Pricing";
@@ -107,6 +107,9 @@ export default function Home() {
           <Check size={16} aria-hidden />
         </a>
       </footer>
+      <a className="back-to-top" href="#top" aria-label="Back to top">
+        <ArrowUp size={20} aria-hidden />
+      </a>
     </>
   );
 }
