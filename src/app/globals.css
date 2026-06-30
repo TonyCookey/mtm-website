@@ -468,7 +468,7 @@ p {
 .phone {
   position: relative;
   width: min(72vw, 270px);
-  height: 536px;
+  height: 550px;
   border: 8px solid #08090a;
   border-radius: 42px;
   padding: 8px;
@@ -513,7 +513,7 @@ p {
   inset: 0;
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto auto;
-  gap: 14px;
+  gap: 30px;
   padding: 30px 16px 13px;
 }
 
@@ -527,10 +527,10 @@ p {
 
 .phone-screen__body {
   display: grid;
-  align-content: center;
+  align-content: start;
   justify-items: center;
-  gap: 12px;
-  min-height: 206px;
+  gap: 15px;
+  min-height: 150px;
   text-align: center;
 }
 
@@ -564,7 +564,7 @@ p {
 
 .phone-screen__panel {
   display: grid;
-  gap: 6px;
+  gap: 3px;
   padding: 12px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 20px;
