@@ -1,9 +1,14 @@
-export type BillingCycle = "monthly" | "annual";
+export type Currency = "usd" | "gbp" | "ngn";
+
+export const currencies: { code: Currency; label: string }[] = [
+  { code: "ngn", label: "NGN" },
+  { code: "usd", label: "USD" },
+  { code: "gbp", label: "GBP" }
+];
 
 export type PricingPlan = {
   name: string;
-  monthly: string;
-  annual: string;
+  prices: Record<Currency, string>;
   tone: string;
   description: string;
   benefits: string[];
@@ -13,42 +18,64 @@ export type PricingPlan = {
 export const pricingPlans: PricingPlan[] = [
   {
     name: "Regular",
-    monthly: "NGN 15,000",
-    annual: "NGN 150,000",
+    prices: {
+      usd: "$100",
+      gbp: "£100",
+      ngn: "₦100,000"
+    },
     tone: "Guided foundation",
-    description: "For singles who want structure, clarity, and a responsible path into the MTM process.",
+    description: "For singles beginning the MTM mentoring and matching journey with structure and accountability.",
     benefits: [
-      "Mentoring-led onboarding",
-      "Marriage readiness assessments",
-      "Profile review and guidance",
-      "Eligible recommendation flow"
+      "12 Weeks Mentoring Classes",
+      "Assessments & Surveys",
+      "Browse Limited Profiles",
+      "Accountability System",
+      "5 Weekly Chats",
+      "Country-based matching pool",
+      "1 Weekly Chat Carryover"
     ]
   },
   {
     name: "Premium",
-    monthly: "NGN 28,000",
-    annual: "NGN 280,000",
+    prices: {
+      usd: "$500",
+      gbp: "£500",
+      ngn: "₦500,000"
+    },
     tone: "Deeper preparation",
-    description: "For singles who want more intentional support while they prepare for a serious match.",
+    description: "For singles who want broader access, richer mentoring resources, and stronger recommendation support.",
     benefits: [
       "Everything in Regular",
-      "Expanded mentor touchpoints",
-      "Stronger readiness feedback",
-      "Priority recommendation review"
+      "Monthly Profile Recommendations",
+      "Browse Unlimited Profiles",
+      "Priority Access to Coaches",
+      "Access to Global Pool and Profiles",
+      "10 Weekly Chats",
+      "3 Weekly Chat Carryover",
+      "Mentoring replay library and worksheets",
+      "Monthly group Q&A"
     ],
     featured: true
   },
   {
     name: "VIP",
-    monthly: "NGN 52,000",
-    annual: "NGN 520,000",
+    prices: {
+      usd: "$1,000",
+      gbp: "£1,000",
+      ngn: "₦1,000,000"
+    },
     tone: "High-touch guidance",
-    description: "For singles who want the most personal level of mentoring, care, and review.",
+    description: "For singles who want the most personal level of mentoring, protection, and introduction support.",
     benefits: [
       "Everything in Premium",
-      "High-touch mentor support",
-      "Concierge-style review flow",
-      "More personal matching guidance"
+      "Dedicated Matchmaker and Coach",
+      "Priority Access to PK & PM",
+      "Browse Unlimited Profiles",
+      "15 Weekly Chats",
+      "Off Platform Introductions",
+      "MTM Profile Shield™",
+      "Access to Global Profiles",
+      "Deeper readiness feedback"
     ]
   }
 ];

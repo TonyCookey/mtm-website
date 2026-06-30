@@ -1,4 +1,4 @@
-import Image from "next/image";
+import type { CSSProperties } from "react";
 import { profileMarquee } from "@/content/homepage";
 
 export function ProfileMarquee() {
@@ -7,29 +7,32 @@ export function ProfileMarquee() {
   return (
     <section className="profiles" id="profiles" aria-label="MTM profiles preview">
       <div className="profiles__inner">
-        <h2>Why Mentor To Marry?</h2>
+        <h2>A community of serious Christian singles.</h2>
         <div className="profiles__track-wrap">
           <div className="profiles__track">
             {profiles.map((profile, index) => (
-              <article className="profile-chip" key={`${profile.name}-${index}`}>
-                <div className="profile-chip__avatar">
-                  <Image src={profile.image} alt="" fill sizes="150px" />
-                </div>
-                <div>
-                  <strong>
-                    {profile.name}, {profile.age}
-                  </strong>
-                  <span>{profile.tag}</span>
-                </div>
+              <article className="profile-chip" key={`${profile.image}-${index}`}>
+                <div className="profile-chip__avatar" style={getProfileTileStyle(profile.image, index)} />
               </article>
             ))}
           </div>
         </div>
         <p className="profiles__copy">
-          It is a quieter way to prepare, meet, and discern: human enough for real connection,
-          structured enough for people who are serious about marriage.
+          These are fictional AI-generated portraits for preview only. MTM protects member privacy while showing the kind
+          of diverse, marriage-minded community the process is built to serve.
         </p>
       </div>
     </section>
   );
+}
+
+function getProfileTileStyle(image: string, index: number): CSSProperties {
+  const tileIndex = index % profileMarquee.length;
+  const col = tileIndex % 4;
+  const row = Math.floor(tileIndex / 4);
+
+  return {
+    backgroundImage: `url(${image})`,
+    backgroundPosition: `${(col / 3) * 100}% ${row * 100}%`
+  };
 }

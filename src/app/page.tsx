@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowRight, ArrowUp, Check, Mail, MessageCircle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Header } from "@/components/Header";
+import { MentoringSection } from "@/components/MentoringSection";
 import { Pricing } from "@/components/Pricing";
 import { ProfileMarquee } from "@/components/ProfileMarquee";
 import { Reveal } from "@/components/Reveal";
@@ -48,6 +49,8 @@ export default function Home() {
 
         <SignatureScroll />
 
+        <MentoringSection />
+
         <ProfileMarquee />
 
         <SectionShell
@@ -80,7 +83,7 @@ export default function Home() {
               <p className="eyebrow">Begin with intention</p>
               <h2>Join the guided path for Christian singles preparing for marriage.</h2>
               <div className="final-cta__actions">
-                <a className="button button--primary" href={siteConfig.appUrl}>
+                <a className="button button--primary" href={siteConfig.selfanyUrl}>
                   Start your journey
                   <ArrowRight size={18} aria-hidden />
                 </a>
@@ -102,8 +105,8 @@ export default function Home() {
           <strong>Mentor To Marry</strong>
           <span>Christian marriage preparation with mentoring, review, and responsible matching.</span>
         </div>
-        <a href={siteConfig.appUrl}>
-          Continue to app
+        <a href={siteConfig.selfanyUrl}>
+          Register
           <Check size={16} aria-hidden />
         </a>
       </footer>

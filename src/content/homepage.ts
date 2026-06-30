@@ -1,31 +1,31 @@
 export const signatureScreens = [
   {
-    kicker: "Profile",
-    title: "Build a profile with more than a photo.",
-    body: "MTM gathers faith, values, readiness, and practical context so introductions can begin with clarity.",
-    image: "",
-    screen: "profile",
-    stat: "84%",
-    label: "profile clarity"
+    kicker: "Mentoring",
+    title: "Begin with counsel before connection.",
+    body: "MTM starts with guided mentoring so singles slow down, build clarity, and prepare for the responsibility of marriage.",
+    screen: "mentoring"
   },
   {
-    kicker: "Matches",
-    title: "See people worth considering with care.",
-    body: "Recommendations surface meaningful signals first, then let mutual interest open the next step.",
-    image: "",
-    screen: "matches",
-    stat: "Fit",
-    label: "reviewed match"
+    kicker: "Matching",
+    title: "Meet people through a guided pool.",
+    body: "Browse eligible profiles, receive recommendations, and use structured chats within the access level of your plan.",
+    screen: "matching"
+  },
+  {
+    kicker: "Marriage",
+    title: "Move toward introductions with intention.",
+    body: "When readiness and mutual interest align, MTM supports marriage-minded introductions with accountability and care.",
+    screen: "marriage"
   }
 ] as const;
 
 export const profileMarquee = [
-  { name: "Ada", age: "29", tag: "Faith-led", image: "/images/profiles/ada.jpg" },
-  { name: "Maya", age: "33", tag: "Family-minded", image: "/images/profiles/tomi.jpg" },
-  { name: "Kemi", age: "31", tag: "Ready to grow", image: "/images/profiles/kemi.jpg" },
-  { name: "Ethan", age: "35", tag: "Intentional", image: "/images/profiles/daniel.jpg" },
-  { name: "Ife", age: "30", tag: "Clear values", image: "/images/profiles/ife.jpg" },
-  { name: "Sofia", age: "28", tag: "Purposeful", image: "/images/profiles/mara.jpg" },
-  { name: "Nosa", age: "36", tag: "Covenant-minded", image: "/images/profiles/nosa.jpg" },
-  { name: "Noah", age: "34", tag: "Mentor-ready", image: "/images/profiles/femi.jpg" }
+  { image: "/images/profiles/generated-sheet.png" },
+  { image: "/images/profiles/generated-sheet.png" },
+  { image: "/images/profiles/generated-sheet.png" },
+  { image: "/images/profiles/generated-sheet.png" },
+  { image: "/images/profiles/generated-sheet.png" },
+  { image: "/images/profiles/generated-sheet.png" },
+  { image: "/images/profiles/generated-sheet.png" },
+  { image: "/images/profiles/generated-sheet.png" }
 ] as const;
