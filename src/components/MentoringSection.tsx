@@ -5,7 +5,7 @@ import { SectionShell } from "@/components/SectionShell";
 const mentoringPillars = [
   {
     icon: BookOpen,
-    title: "12 weeks of mentoring classes",
+    title: "8 weeks of mentoring classes",
     body: "The journey begins with teaching that helps singles examine readiness, faith, values, communication, and the realities of covenant marriage."
   },
   {

@@ -26,7 +26,7 @@ export const pricingPlans: PricingPlan[] = [
     tone: "Guided foundation",
     description: "For singles beginning the MTM mentoring and matching journey with structure and accountability.",
     benefits: [
-      "12 Weeks Mentoring Classes",
+      "8 Weeks Mentoring Classes",
       "Assessments & Surveys",
       "Browse Limited Profiles",
       "Accountability System",
