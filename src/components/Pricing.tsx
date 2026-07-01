@@ -33,9 +33,7 @@ export function Pricing() {
       <div className="pricing-grid">
         {pricingPlans.map((plan, index) => (
           <Reveal className={`price-card ${plan.featured ? "price-card--featured" : ""}`} delay={index * 0.08} key={plan.name}>
-            <div className="price-card__top">
-              <span>{plan.tone}</span>
-            </div>
+
             <h3>{plan.name}</h3>
             <p className="price-card__price">
               {plan.prices[currency]}

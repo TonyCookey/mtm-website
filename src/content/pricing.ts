@@ -52,8 +52,7 @@ export const pricingPlans: PricingPlan[] = [
       "Access to Global Pool and Profiles",
       "10 Weekly Chats",
       "3 Weekly Chat Carryover",
-      "Mentoring replay library and worksheets",
-      "Monthly group Q&A"
+      "Private Groups"
     ],
     featured: true
   },
@@ -75,7 +74,6 @@ export const pricingPlans: PricingPlan[] = [
       "Off Platform Introductions",
       "MTM Profile Shield™",
       "Access to Global Profiles",
-      "Deeper readiness feedback"
     ]
   }
 ];

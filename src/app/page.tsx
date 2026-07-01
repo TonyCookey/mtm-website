@@ -42,7 +42,7 @@ export default function Home() {
               </div>
             </Reveal>
             <Reveal className="hero__proof" delay={0.14}>
-              <span>For singles who value counsel, character, and covenant.</span>
+              <span>For singles ready for Kingdom marriages.</span>
             </Reveal>
           </div>
         </section>
