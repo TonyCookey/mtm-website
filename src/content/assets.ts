@@ -1,11 +1,15 @@
 export const assets = {
   hero: {
-    src: "/images/hero-courtyard.png",
-    alt: "A thoughtful Christian couple in a guided mentoring setting"
+    src: "/images/community-hero.jpg",
+    alt: "Young adults smiling together at a Mentor To Marry gathering"
   },
   mentors: {
-    src: "/images/mentors-session.png",
-    alt: "Mature marriage mentors in conversation with a single woman"
+    src: "/images/founders-kingsley-mildred.jpg",
+    alt: "Kingsley and Mildred Okonkwo speaking at a marriage mentoring session"
+  },
+  mentorsPortrait: {
+    src: "/images/founders-kingsley-mildred-bw.jpg",
+    alt: "Kingsley and Mildred Okonkwo on stage in black and white"
   },
   community: {
     src: "/images/community-gathering.png",

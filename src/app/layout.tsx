@@ -3,6 +3,7 @@ import { DM_Sans, Prata } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/config/site.config";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -33,10 +34,10 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "/images/hero-courtyard.png",
-        width: 1792,
-        height: 1024,
-        alt: "Mentor To Marry mentoring moment"
+        url: "/images/community-hero.jpg",
+        width: 1600,
+        height: 1065,
+        alt: "Young adults at a Mentor To Marry gathering"
       }
     ],
     locale: "en_NG",
@@ -44,6 +45,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: siteConfig.url
+  },
+  icons: {
+    icon: "/favicons/mtm.svg"
   }
 };
 
@@ -66,6 +70,7 @@ export default function RootLayout({
           />
         ) : null}
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
