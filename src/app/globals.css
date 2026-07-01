@@ -429,7 +429,7 @@ p {
   gap: clamp(14px, 2.2vw, 24px);
   width: min(1120px, calc(100% - 32px));
   margin-inline: auto;
-  padding: clamp(70px, 9svh, 92px) 0 clamp(18px, 3svh, 28px);
+  padding: clamp(40px, 9svh, 52px) 0 clamp(18px, 3svh, 28px);
   text-align: center;
 }
 
@@ -1101,7 +1101,7 @@ p {
   }
 
   .signature__sticky {
-    padding-top: 76px;
+    padding-top: 40px;
   }
 }
 
@@ -1230,7 +1230,7 @@ p {
 
   .signature__sticky {
     gap: 16px;
-    padding-top: 74px;
+    padding-top: 40px;
     padding-bottom: 18px;
   }
 
