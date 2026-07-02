@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, ArrowUp, Check, Mail, MessageCircle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import { FreeCommunitySection } from "@/components/FreeCommunitySection";
 import { Header } from "@/components/Header";
 import { MentoringSection } from "@/components/MentoringSection";
 import { Pricing } from "@/components/Pricing";
@@ -39,6 +40,9 @@ export default function Home() {
                   {ctas.primary.label}
                   <ArrowRight size={18} aria-hidden />
                 </a>
+                <a className="button button--hero-secondary" href={ctas.freeCommunity.href}>
+                  {ctas.freeCommunity.label}
+                </a>
               </div>
             </Reveal>
             <Reveal className="hero__proof" delay={0.14}>
@@ -73,6 +77,8 @@ export default function Home() {
 
         <Pricing />
 
+        <FreeCommunitySection />
+
         <SectionShell id="faq" eyebrow="FAQ" title="Good questions deserve straight answers.">
           <FAQAccordion items={faqs} />
         </SectionShell>
@@ -84,14 +90,17 @@ export default function Home() {
               <h2>Join the guided path for Christian singles preparing for marriage.</h2>
               <div className="final-cta__actions">
                 <a className="button button--primary" href={siteConfig.selfanyUrl}>
-                  Start your journey
+                  Start your MTM journey
                   <ArrowRight size={18} aria-hidden />
                 </a>
-                <a className="button button--light" href={`mailto:${siteConfig.email}`}>
+                <a className="button button--light" href={siteConfig.freeCommunityUrl}>
+                  {ctas.freeCommunity.label}
+                </a>
+                <a className="button button--light final-cta__contact" href={`mailto:${siteConfig.email}`}>
                   <Mail size={18} aria-hidden />
                   {siteConfig.email}
                 </a>
-                <a className="button button--light" href={siteConfig.whatsappUrl}>
+                <a className="button button--light final-cta__contact" href={siteConfig.whatsappUrl}>
                   <MessageCircle size={18} aria-hidden />
                   {siteConfig.phoneDisplay}
                 </a>
@@ -106,7 +115,7 @@ export default function Home() {
           <span>Christian marriage preparation with mentoring, review, and responsible matching.</span>
         </div>
         <a href={siteConfig.selfanyUrl}>
-          Register
+          Register for MTM
           <Check size={16} aria-hidden />
         </a>
       </footer>

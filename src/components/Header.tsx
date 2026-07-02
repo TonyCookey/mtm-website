@@ -26,7 +26,7 @@ export function Header() {
           </a>
         ))}
         <a className="desktop-nav__start" href={ctas.primary.href}>
-          Register
+          {ctas.primary.label}
         </a>
       </nav>
       <button className="icon-button menu-button" type="button" onClick={() => setOpen(true)} aria-label="Open menu">
