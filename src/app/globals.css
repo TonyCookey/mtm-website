@@ -770,15 +770,14 @@ p {
 }
 
 .quote-panel blockquote {
-  font-size: clamp(1.28rem, 1.05rem + 0.9vw, 1.85rem);
-  line-height: 1.55;
+  font-size: clamp(1.38rem, 1.25rem + 0.9vw, 1.85rem);
+  line-height: 1.5;
 }
 
 .quote-panel p {
   margin: 20px 0 0;
   color: var(--muted);
   font-size: clamp(0.92rem, 1.5vw, 1rem);
-  font-style: italic;
 }
 
 .pricing-toolbar {
@@ -1094,6 +1093,7 @@ p {
 
   .section {
     padding-block: 58px;
+    padding-inline: 8px;
   }
 
   .section__header>p:last-child {
@@ -1180,7 +1180,7 @@ p {
 
   .phone {
     max-width: min(78vw, 260px);
-    height: clamp(386px, calc(100svh - 300px), 500px);
+    height: clamp(450px, calc(100svh - 300px), 500px);
     border-width: 7px;
     border-radius: 38px;
     padding: 7px;
