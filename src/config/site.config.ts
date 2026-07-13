@@ -3,7 +3,7 @@ export const siteConfig = {
   domain: "mentortomarry.com",
   url: "https://mentortomarry.com",
   selfanyUrl: "https://selfany.com/MTM",
-  freeCommunityUrl: "https://selfany.com/MTMFREE",
+  freeCommunityUrl: "https://selfany.com/RFMC",
   email: "hello@mentortomarry.com",
   phoneDisplay: "+234 814 912 6848",
   whatsappUrl: "https://wa.me/2348149126848",
