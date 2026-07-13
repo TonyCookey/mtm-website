@@ -12,11 +12,105 @@ import { SignatureScroll } from "@/components/SignatureScroll";
 import { assets } from "@/content/assets";
 import { faqs } from "@/content/faqs";
 import { ctas } from "@/content/navigation";
+import { pricingPlans, type Currency } from "@/content/pricing";
 import { siteConfig } from "@/config/site.config";
+
+const currencyLabels: Record<Currency, string> = {
+  ngn: "NGN",
+  usd: "USD",
+  gbp: "GBP"
+};
+
+function priceValue(price: string) {
+  return price.replace(/[^0-9.]/g, "");
+}
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${siteConfig.url}/#organization`,
+    name: siteConfig.name,
+    url: siteConfig.url,
+    logo: `${siteConfig.url}/favicons/mtm.svg`,
+    email: siteConfig.email,
+    telephone: siteConfig.phoneDisplay,
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      email: siteConfig.email,
+      telephone: siteConfig.phoneDisplay,
+      availableLanguage: ["English"]
+    },
+    areaServed: ["Nigeria", "Diaspora", "Global"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteConfig.url}/#website`,
+    name: siteConfig.name,
+    url: siteConfig.url,
+    publisher: {
+      "@id": `${siteConfig.url}/#organization`
+    },
+    inLanguage: "en"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${siteConfig.url}/#faq`,
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer
+      }
+    }))
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${siteConfig.url}/#service`,
+    name: "Christian marriage preparation and mentoring",
+    serviceType: "Mentoring-led Christian marriage preparation and matching",
+    provider: {
+      "@id": `${siteConfig.url}/#organization`
+    },
+    areaServed: ["Nigeria", "Diaspora", "Global"],
+    audience: {
+      "@type": "Audience",
+      audienceType: "Christian singles preparing for intentional marriage"
+    },
+    offers: {
+      "@type": "OfferCatalog",
+      name: "Mentor To Marry membership plans",
+      itemListElement: pricingPlans.map((plan) => ({
+        "@type": "Offer",
+        name: `${plan.name} membership`,
+        description: plan.description,
+        url: siteConfig.selfanyUrl,
+        availability: "https://schema.org/InStock",
+        priceSpecification: Object.entries(plan.prices).map(([currency, price]) => ({
+          "@type": "UnitPriceSpecification",
+          price: priceValue(price),
+          priceCurrency: currencyLabels[currency as Currency],
+          billingDuration: "P1Y"
+        }))
+      }))
+    }
+  }
+];
 
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c")
+        }}
+      />
       <Header />
       <main>
         <section className="hero" id="top">
@@ -33,7 +127,7 @@ export default function Home() {
             <Reveal className="hero__copy">
               <h1>Mentor To Marry</h1>
               <p className="hero__lede">
-                A guided path for Christian singles preparing for intentional marriage.
+                A guided path for Christian singles in Nigeria and the diaspora preparing for intentional marriage.
               </p>
               <div className="hero__actions">
                 <a className="button button--primary" href={ctas.primary.href}>
@@ -61,7 +155,7 @@ export default function Home() {
         <SectionShell
           eyebrow="Coaches and founders"
           title="Guided by people who understand faith, love, and marriage."
-          intro="Kingsley and Mildred Okonkwo bring pastoral care, practical wisdom, and a deeply human standard of trust to the MTM journey."
+          intro="Kingsley and Mildred Okonkwo bring pastoral care, practical wisdom, and a deeply human standard of trust to the MTM journey for serious Christian singles in Nigeria, the diaspora, and beyond."
         >
           <div className="media-split">
             <Reveal className="media-split__image">
