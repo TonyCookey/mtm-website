@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, ArrowUp, Check, Mail, MessageCircle } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUp, Check, Mail, MessageCircle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FreeCommunitySection } from "@/components/FreeCommunitySection";
 import { Header } from "@/components/Header";
@@ -40,8 +40,9 @@ export default function Home() {
                   {ctas.primary.label}
                   <ArrowRight size={18} aria-hidden />
                 </a>
-                <a className="button button--hero-secondary" href={ctas.freeCommunity.href}>
+                <a className="hero__secondary-link" href={ctas.freeCommunity.href}>
                   {ctas.freeCommunity.label}
+                  <ArrowDown size={16} aria-hidden />
                 </a>
               </div>
             </Reveal>
