@@ -3,7 +3,12 @@ import { DM_Sans, Prata } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/config/site.config";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+const title = "Mentor To Marry | Christian Marriage Preparation";
+const description =
+  "Mentor To Marry is a mentoring-led path for Christian singles in Nigeria and the diaspora preparing for intentional marriage.";
+const image = "/images/community-hero.jpg";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -21,20 +26,39 @@ const prata = Prata({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Mentor To Marry | Christian Marriage Preparation",
+    default: title,
     template: "%s | Mentor To Marry"
   },
-  description:
-    "Mentor To Marry is a guided, mentoring-led path for intentional Christian singles preparing for marriage.",
+  description,
+  keywords: [
+    "Christian singles",
+    "Christian marriage preparation",
+    "Christian matchmaking",
+    "marriage mentoring",
+    "Mentor To Marry",
+    "Christian singles Nigeria",
+    "Christian singles diaspora",
+    "Kingdom marriage"
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1
+    }
+  },
   openGraph: {
-    title: "Mentor To Marry",
-    description:
-      "A mature, mentoring-led path for Christian singles preparing for intentional marriage.",
+    title,
+    description,
     url: siteConfig.url,
     siteName: siteConfig.name,
     images: [
       {
-        url: "/images/community-hero.jpg",
+        url: image,
         width: 1600,
         height: 1065,
         alt: "Young adults at a Mentor To Marry gathering"
@@ -48,6 +72,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicons/mtm.svg"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [image]
   }
 };
 

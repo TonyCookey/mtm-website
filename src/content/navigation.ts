@@ -15,5 +15,13 @@ export const ctas = {
   secondary: {
     label: "Profiles",
     href: "#app"
+  },
+  freeCommunity: {
+    label: "Join our free community",
+    href: "#community"
+  },
+  freeCommunityExternal: {
+    label: "Join the singles community",
+    href: siteConfig.freeCommunityUrl
   }
 } as const;

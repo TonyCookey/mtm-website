@@ -55,7 +55,9 @@ export function Pricing() {
         ))}
       </div>
       <p className="pricing-note">
-        Membership gives access to mentoring, review, and recommendations. It does not guarantee a match, mutual interest, or marriage.
+        Want to start gently? The{" "}
+        <a href={siteConfig.freeCommunityUrl}>Singles Community</a> is open to everyone. Paid membership gives access
+        to mentoring, review, and recommendations. It does not guarantee a match, mutual interest, or marriage.
       </p>
     </SectionShell>
   );
