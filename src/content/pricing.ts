@@ -19,9 +19,9 @@ export const pricingPlans: PricingPlan[] = [
   {
     name: "Regular",
     prices: {
-      usd: "$100",
-      gbp: "£100",
-      ngn: "₦100,000"
+      usd: "$90",
+      gbp: "£90",
+      ngn: "₦70,000"
     },
     tone: "Guided foundation",
     description: "For singles beginning the MTM mentoring and matching journey with structure and accountability.",
@@ -38,9 +38,9 @@ export const pricingPlans: PricingPlan[] = [
   {
     name: "Premium",
     prices: {
-      usd: "$500",
-      gbp: "£500",
-      ngn: "₦500,000"
+      usd: "$450",
+      gbp: "£450",
+      ngn: "₦350,000"
     },
     tone: "Deeper preparation",
     description: "For singles who want broader access, richer mentoring resources, and stronger recommendation support.",
@@ -59,9 +59,9 @@ export const pricingPlans: PricingPlan[] = [
   {
     name: "VIP",
     prices: {
-      usd: "$1,000",
-      gbp: "£1,000",
-      ngn: "₦1,000,000"
+      usd: "$900",
+      gbp: "£900",
+      ngn: "₦700,000"
     },
     tone: "High-touch guidance",
     description: "For singles who want the most personal level of mentoring, protection, and introduction support.",
