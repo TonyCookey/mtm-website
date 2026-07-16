@@ -5,9 +5,9 @@ import "./globals.css";
 import { siteConfig } from "@/config/site.config";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const title = "Mentor To Marry | Christian Marriage Preparation";
+const title = "Mentor To Marry | Launching Soon";
 const description =
-  "Mentor To Marry is a mentoring-led path for Christian singles in Nigeria and the diaspora preparing for intentional marriage.";
+  "Mentor To Marry is preparing to launch a guided path for Christian singles ready for intentional marriage.";
 const image = "/images/community-hero.jpg";
 
 const dmSans = DM_Sans({
@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     "Kingdom marriage"
   ],
   robots: {
-    index: true,
+    index: false,
     follow: true,
     googleBot: {
-      index: true,
+      index: false,
       follow: true,
       "max-image-preview": "large",
       "max-snippet": -1,

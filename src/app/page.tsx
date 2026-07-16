@@ -103,6 +103,38 @@ const structuredData = [
 ];
 
 export default function Home() {
+  return <ComingSoonPage />;
+}
+
+function ComingSoonPage() {
+  return (
+    <main className="coming-soon" id="top">
+      <Image
+        src={assets.hero.src}
+        alt={assets.hero.alt}
+        fill
+        priority
+        className="coming-soon__image"
+        sizes="100vw"
+      />
+      <div className="coming-soon__veil" />
+      <section className="coming-soon__content" aria-label="Mentor To Marry coming soon">
+        <p className="coming-soon__brand">
+          Mentor <span>To</span> Marry
+        </p>
+        <div className="coming-soon__copy">
+          <p className="eyebrow">Launching soon</p>
+          <h1>Mentor To Marry</h1>
+          <p>
+            Mentor To Marry is being prepared for official launch. The full experience will be available soon.
+          </p>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+function FullHomePage() {
   return (
     <>
       <script
