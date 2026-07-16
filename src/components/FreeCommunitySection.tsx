@@ -27,7 +27,7 @@ export function FreeCommunitySection() {
             ))}
           </ul>
           <div className="community-section__actions">
-            <a className="button button--primary" href={ctas.freeCommunityExternal.href}>
+            <a className="button button--primary" href={ctas.freeCommunityExternal.href} target="_blank" rel="noopener noreferrer">
               {ctas.freeCommunityExternal.label}
               <ArrowRight size={18} aria-hidden />
             </a>

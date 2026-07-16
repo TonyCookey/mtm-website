@@ -25,7 +25,7 @@ export function Header() {
             {item.label}
           </a>
         ))}
-        <a className="desktop-nav__start" href={ctas.primary.href}>
+        <a className="desktop-nav__start" href={ctas.primary.href} target="_blank" rel="noopener noreferrer">
           {ctas.primary.label}
         </a>
       </nav>
@@ -42,7 +42,7 @@ export function Header() {
               {item.label}
             </a>
           ))}
-          <a className="button button--primary" href={ctas.primary.href}>
+          <a className="button button--primary" href={ctas.primary.href} target="_blank" rel="noopener noreferrer">
             {ctas.primary.label}
           </a>
         </nav>

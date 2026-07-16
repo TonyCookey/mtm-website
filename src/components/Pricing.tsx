@@ -48,7 +48,7 @@ export function Pricing() {
                 </li>
               ))}
             </ul>
-            <a className="button button--primary" href={siteConfig.selfanyUrl}>
+            <a className="button button--primary" href={siteConfig.selfanyUrl} target="_blank" rel="noopener noreferrer">
               Choose {plan.name}
             </a>
           </Reveal>
@@ -56,8 +56,11 @@ export function Pricing() {
       </div>
       <p className="pricing-note">
         Want to start gently? The{" "}
-        <a href={siteConfig.freeCommunityUrl}>Singles Community</a> is open to everyone. Paid membership gives access
-        to mentoring, review, and recommendations. It does not guarantee a match, mutual interest, or marriage.
+        <a href={siteConfig.freeCommunityUrl} target="_blank" rel="noopener noreferrer">
+          Singles Community
+        </a>{" "}
+        is open to everyone. Paid membership gives access to mentoring, review, and recommendations. It does not
+        guarantee a match, mutual interest, or marriage.
       </p>
     </SectionShell>
   );

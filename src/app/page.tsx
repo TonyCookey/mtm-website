@@ -128,7 +128,7 @@ export default function Home() {
                 A guided path for Christian singles preparing for intentional marriage.
               </p>
               <div className="hero__actions">
-                <a className="button button--primary" href={ctas.primary.href}>
+                <a className="button button--primary" href={ctas.primary.href} target="_blank" rel="noopener noreferrer">
                   {ctas.primary.label}
                   <ArrowRight size={18} aria-hidden />
                 </a>
@@ -182,7 +182,7 @@ export default function Home() {
               <p className="eyebrow">Begin with intention</p>
               <h2>Join the guided path for Christian singles preparing for marriage.</h2>
               <div className="final-cta__actions">
-                <a className="button button--primary" href={siteConfig.selfanyUrl}>
+                <a className="button button--primary" href={siteConfig.selfanyUrl} target="_blank" rel="noopener noreferrer">
                   Start your MTM journey
                   <ArrowRight size={18} aria-hidden />
                 </a>
@@ -200,7 +200,7 @@ export default function Home() {
           <strong>Mentor To Marry</strong>
           <span>Christian marriage preparation with mentoring, review, and responsible matching.</span>
         </div>
-        <a href={siteConfig.selfanyUrl}>
+        <a href={siteConfig.selfanyUrl} target="_blank" rel="noopener noreferrer">
           Register for MTM
           <Check size={16} aria-hidden />
         </a>
