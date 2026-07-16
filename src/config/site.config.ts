@@ -5,8 +5,6 @@ export const siteConfig = {
   selfanyUrl: "https://selfany.com/MTM",
   freeCommunityUrl: "https://selfany.com/RFMSC",
   email: "hello@mentortomarry.com",
-  phoneDisplay: "+234 814 912 6848",
-  whatsappUrl: "https://wa.me/2348149126848",
   analytics: {
     plausibleDomain: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? ""
   }

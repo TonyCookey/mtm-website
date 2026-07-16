@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowDown, ArrowRight, ArrowUp, Check, Mail, MessageCircle } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUp, Check, Mail } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FreeCommunitySection } from "@/components/FreeCommunitySection";
 import { Header } from "@/components/Header";
@@ -34,12 +34,10 @@ const structuredData = [
     url: siteConfig.url,
     logo: `${siteConfig.url}/favicons/mtm.svg`,
     email: siteConfig.email,
-    telephone: siteConfig.phoneDisplay,
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",
       email: siteConfig.email,
-      telephone: siteConfig.phoneDisplay,
       availableLanguage: ["English"]
     },
     areaServed: ["Nigeria", "Diaspora", "Global"]
@@ -127,7 +125,7 @@ export default function Home() {
             <Reveal className="hero__copy">
               <h1>Mentor To Marry</h1>
               <p className="hero__lede">
-                A guided path for Christian singles in Nigeria and the diaspora preparing for intentional marriage.
+                A guided path for Christian singles preparing for intentional marriage.
               </p>
               <div className="hero__actions">
                 <a className="button button--primary" href={ctas.primary.href}>
@@ -188,16 +186,9 @@ export default function Home() {
                   Start your MTM journey
                   <ArrowRight size={18} aria-hidden />
                 </a>
-                <a className="button button--light" href={siteConfig.freeCommunityUrl}>
-                  {ctas.freeCommunity.label}
-                </a>
                 <a className="button button--light final-cta__contact" href={`mailto:${siteConfig.email}`}>
                   <Mail size={18} aria-hidden />
                   {siteConfig.email}
-                </a>
-                <a className="button button--light final-cta__contact" href={siteConfig.whatsappUrl}>
-                  <MessageCircle size={18} aria-hidden />
-                  {siteConfig.phoneDisplay}
                 </a>
               </div>
             </Reveal>
