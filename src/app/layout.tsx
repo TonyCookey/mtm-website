@@ -5,9 +5,9 @@ import "./globals.css";
 import { siteConfig } from "@/config/site.config";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const title = "Mentor To Marry | Launching Soon";
+const title = "Mentor To Marry | Christian Marriage Preparation";
 const description =
-  "Mentor To Marry is preparing to launch a guided path for Christian singles ready for intentional marriage.";
+  "Mentor To Marry is a guided path for Christian singles preparing for intentional marriage through mentoring, review, and matching.";
 const image = "/images/community-hero.jpg";
 
 const dmSans = DM_Sans({
@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     "Kingdom marriage"
   ],
   robots: {
-    index: false,
+    index: true,
     follow: true,
     googleBot: {
-      index: false,
+      index: true,
       follow: true,
       "max-image-preview": "large",
       "max-snippet": -1,
