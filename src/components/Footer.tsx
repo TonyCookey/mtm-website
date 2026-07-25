@@ -12,7 +12,6 @@ const indexLinks = [
 const resourceLinks = [
   { label: "Register for MTM", href: siteConfig.selfanyUrl, external: true },
   { label: "Join the free community", href: siteConfig.freeCommunityUrl, external: true },
-  { label: "View profiles", href: "/#app" },
   { label: "Contact", href: `mailto:${siteConfig.email}` }
 ] as const;
 
@@ -33,8 +32,7 @@ const legalGroups = [
       "Community Guidelines & Code of Conduct",
       "Platform Values & Community Principles",
       "Statement of Faith",
-      "Profile Standards Policy",
-      "Moderator, Mentor & Volunteer Code of Conduct"
+      "Profile Standards Policy"
     ]
   },
   {

@@ -1382,7 +1382,7 @@ p {
 
 .footer__brand span {
   max-width: 460px;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1.55;
 }
 
@@ -1440,9 +1440,9 @@ p {
   align-items: center;
   gap: 10px;
   color: var(--ink-soft);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .footer a:hover,
