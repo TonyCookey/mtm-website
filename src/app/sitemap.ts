@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { legalDocuments } from "@/content/legal";
+import { publicLegalDocuments } from "@/content/legal";
 import { siteConfig } from "@/config/site.config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7
     },
-    ...legalDocuments.map((document) => ({
+    ...publicLegalDocuments.map((document) => ({
       url: `${siteConfig.url}/legal/${document.slug}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
