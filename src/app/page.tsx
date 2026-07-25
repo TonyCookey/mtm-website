@@ -13,18 +13,8 @@ import { SignatureScroll } from "@/components/SignatureScroll";
 import { assets } from "@/content/assets";
 import { faqs } from "@/content/faqs";
 import { ctas } from "@/content/navigation";
-import { pricingPlans, type Currency } from "@/content/pricing";
+import { pricingPlans } from "@/content/pricing";
 import { siteConfig } from "@/config/site.config";
-
-const currencyLabels: Record<Currency, string> = {
-  ngn: "NGN",
-  usd: "USD",
-  gbp: "GBP"
-};
-
-function priceValue(price: string) {
-  return price.replace(/[^0-9.]/g, "");
-}
 
 const structuredData = [
   {
@@ -89,13 +79,7 @@ const structuredData = [
         name: `${plan.name} membership`,
         description: plan.description,
         url: siteConfig.selfanyUrl,
-        availability: "https://schema.org/InStock",
-        priceSpecification: Object.entries(plan.prices).map(([currency, price]) => ({
-          "@type": "UnitPriceSpecification",
-          price: priceValue(price),
-          priceCurrency: currencyLabels[currency as Currency],
-          billingDuration: "P1Y"
-        }))
+        availability: "https://schema.org/InStock"
       }))
     }
   }

@@ -1,14 +1,5 @@
-export type Currency = "usd" | "gbp" | "ngn";
-
-export const currencies: { code: Currency; label: string }[] = [
-  { code: "ngn", label: "NGN" },
-  { code: "usd", label: "USD" },
-  { code: "gbp", label: "GBP" }
-];
-
 export type PricingPlan = {
   name: string;
-  prices: Record<Currency, string>;
   tone: string;
   description: string;
   benefits: string[];
@@ -18,11 +9,6 @@ export type PricingPlan = {
 export const pricingPlans: PricingPlan[] = [
   {
     name: "Regular",
-    prices: {
-      usd: "$90",
-      gbp: "£90",
-      ngn: "₦70,000"
-    },
     tone: "Guided foundation",
     description: "For singles beginning the MTM mentoring and matching journey with structure and accountability.",
     benefits: [
@@ -37,11 +23,6 @@ export const pricingPlans: PricingPlan[] = [
   },
   {
     name: "Premium",
-    prices: {
-      usd: "$450",
-      gbp: "£450",
-      ngn: "₦350,000"
-    },
     tone: "Deeper preparation",
     description: "For singles who want broader access, richer mentoring resources, and stronger recommendation support.",
     benefits: [
@@ -58,11 +39,6 @@ export const pricingPlans: PricingPlan[] = [
   },
   {
     name: "VIP",
-    prices: {
-      usd: "$900",
-      gbp: "£900",
-      ngn: "₦700,000"
-    },
     tone: "High-touch guidance",
     description: "For singles who want the most personal level of mentoring, protection, and introduction support.",
     benefits: [

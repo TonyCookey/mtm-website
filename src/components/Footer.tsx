@@ -5,7 +5,7 @@ import { siteConfig } from "@/config/site.config";
 const indexLinks = [
   { label: "About", href: "/#app" },
   { label: "Mentoring", href: "/#mentoring" },
-  { label: "Pricing", href: "/#pricing" },
+  { label: "Membership", href: "/#pricing" },
   { label: "FAQ", href: "/#faq" }
 ] as const;
 

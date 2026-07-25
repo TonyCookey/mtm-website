@@ -910,33 +910,6 @@ p {
   object-position: centercenter;
 }
 
-.pricing-toolbar {
-  display: inline-grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4px;
-  justify-self: start;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 4px;
-  background: var(--white);
-}
-
-.pricing-toolbar button {
-  min-height: 42px;
-  border: 0;
-  border-radius: 6px;
-  padding: 8px 16px;
-  color: var(--muted);
-  background: transparent;
-  cursor: pointer;
-  font-weight: 900;
-}
-
-.pricing-toolbar button.is-active {
-  color: var(--white);
-  background: var(--ink);
-}
-
 .pricing-grid {
   display: grid;
   gap: 16px;
@@ -960,31 +933,6 @@ p {
 .price-card--featured {
   border-color: rgba(179, 39, 63, 0.28);
   background: #fff7f8;
-}
-
-.price-card__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--red);
-  font-size: 0.82rem;
-  font-weight: 900;
-}
-
-.price-card__price {
-  margin: 0;
-  color: var(--ink);
-  font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(1.55rem, 1.2rem + 1vw, 1.85rem);
-  line-height: 1;
-}
-
-.price-card__price span {
-  display: block;
-  margin-top: 8px;
-  color: var(--muted);
-  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.86rem;
 }
 
 .price-card__description {
@@ -1836,22 +1784,11 @@ p {
     text-align: center;
   }
 
-  .pricing-toolbar {
-    width: 100%;
-  }
-
-  .pricing-toolbar button {
-    padding-inline: 10px;
-    font-size: 0.86rem;
-  }
-
   .price-card {
     gap: 11px;
     padding: 18px;
   }
 
-  .price-card__top,
-  .price-card__price span,
   .pricing-note {
     font-size: 0.82rem;
   }
