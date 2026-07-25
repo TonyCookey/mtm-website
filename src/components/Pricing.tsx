@@ -39,7 +39,7 @@ export function Pricing() {
         <a href={siteConfig.freeCommunityUrl} target="_blank" rel="noopener noreferrer">
           Singles Community
         </a>{" "}
-        is open to everyone. Paid membership details and checkout are available on Selfany. Membership
+        is open to everyone. Choose a membership package for more details. Membership
         does not guarantee a match, mutual interest, or marriage.
       </p>
     </SectionShell>
