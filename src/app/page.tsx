@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { ArrowDown, ArrowRight, ArrowUp, Check, Mail } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUp, Mail } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import { Footer } from "@/components/Footer";
 import { FreeCommunitySection } from "@/components/FreeCommunitySection";
 import { Header } from "@/components/Header";
 import { MentoringSection } from "@/components/MentoringSection";
@@ -195,16 +196,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="footer">
-        <div>
-          <strong>Mentor To Marry</strong>
-          <span>Christian marriage preparation with mentoring, review, and responsible matching.</span>
-        </div>
-        <a href={siteConfig.selfanyUrl} target="_blank" rel="noopener noreferrer">
-          Register for MTM
-          <Check size={16} aria-hidden />
-        </a>
-      </footer>
+      <Footer />
       <a className="back-to-top" href="#top" aria-label="Back to top">
         <ArrowUp size={20} aria-hidden />
       </a>
