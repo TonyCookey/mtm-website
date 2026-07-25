@@ -11341,6 +11341,10 @@ export const legalDocuments: LegalDocument[] = [
   }
 ];
 
+const internalLegalSlugs = new Set(["moderator-mentor-volunteer-code-of-conduct"]);
+
+export const publicLegalDocuments = legalDocuments.filter((document) => !internalLegalSlugs.has(document.slug));
+
 export function getLegalDocument(slug: string) {
-  return legalDocuments.find((document) => document.slug === slug);
+  return publicLegalDocuments.find((document) => document.slug === slug);
 }

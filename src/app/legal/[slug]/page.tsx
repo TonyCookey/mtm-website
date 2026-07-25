@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/Footer";
 import { LegalDocumentBody } from "@/components/LegalDocumentBody";
-import { getLegalDocument, legalDocuments, type LegalBlock } from "@/content/legal";
+import { getLegalDocument, publicLegalDocuments, type LegalBlock } from "@/content/legal";
 import { siteConfig } from "@/config/site.config";
 
 type LegalDocumentPageProps = {
@@ -13,7 +13,7 @@ type LegalDocumentPageProps = {
 };
 
 export function generateStaticParams() {
-  return legalDocuments.map((document) => ({
+  return publicLegalDocuments.map((document) => ({
     slug: document.slug
   }));
 }

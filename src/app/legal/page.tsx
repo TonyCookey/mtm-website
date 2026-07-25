@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ArrowRight } from "lucide-react";
 import { Footer } from "@/components/Footer";
-import { legalDocuments } from "@/content/legal";
+import { publicLegalDocuments } from "@/content/legal";
 import { siteConfig } from "@/config/site.config";
 
 export const metadata: Metadata = {
@@ -36,7 +36,7 @@ export default function LegalIndexPage() {
         </section>
 
         <section className="legal-index" aria-label="All legal documents">
-          {legalDocuments.map((document) => (
+          {publicLegalDocuments.map((document) => (
             <a className="legal-card" href={`/legal/${document.slug}`} key={document.slug}>
               <h2>{document.title}</h2>
               <p>{document.description}</p>
