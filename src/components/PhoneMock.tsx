@@ -20,9 +20,9 @@ export function PhoneMock({ kicker, title, body, screen, activeIndex }: PhoneMoc
         reduceMotion
           ? undefined
           : {
-              y: activeIndex % 2 === 0 ? 0 : 10,
-              rotate: activeIndex % 2 === 0 ? -0.4 : 0.4
-            }
+            y: activeIndex % 2 === 0 ? 0 : 10,
+            rotate: activeIndex % 2 === 0 ? -0.4 : 0.4
+          }
       }
       transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
     >
@@ -73,7 +73,7 @@ function AnimatedPhoneScreen({ kicker, title, body, screen }: { kicker: string; 
 function getScreenDetails(screen: string) {
   switch (screen) {
     case "mentoring":
-      return ["12-week classes", "Readiness surveys", "Accountability"];
+      return ["8 week classes", "Readiness surveys", "Accountability"];
     case "matching":
       return ["Profile pool", "Recommendations", "Guided chats"];
     case "marriage":
