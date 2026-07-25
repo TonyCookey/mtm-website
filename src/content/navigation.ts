@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/site.config";
 export const navigation = [
   { label: "About", href: "#app" },
   { label: "Mentoring", href: "#mentoring" },
-  { label: "Membership", href: "#pricing" },
+  { label: "Membership", href: "#membership" },
   { label: "FAQ", href: "#faq" }
 ] as const;
 

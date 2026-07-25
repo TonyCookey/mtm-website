@@ -31,7 +31,7 @@ export function FreeCommunitySection() {
               {ctas.freeCommunityExternal.label}
               <ArrowRight size={18} aria-hidden />
             </a>
-            <a className="community-section__text-link" href="#pricing">
+            <a className="community-section__text-link" href="#membership">
               Explore paid membership
             </a>
           </div>
