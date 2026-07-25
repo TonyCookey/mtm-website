@@ -9,7 +9,7 @@ import { SectionShell } from "@/components/SectionShell";
 export function Pricing() {
   return (
     <SectionShell
-      id="pricing"
+      id="membership"
       eyebrow="Membership"
       title="Choose the level of preparation and guidance that fits your season."
       intro="Each membership path starts with mentoring, then opens access to the MTM matching journey. Current membership and checkout details are handled securely on Selfany."
