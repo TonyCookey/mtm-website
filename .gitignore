@@ -1,6 +1,9 @@
 .next/
 node_modules/
 out/
+.env
+.env.*
+!.env.example
 .env*.local
 .DS_Store
 npm-debug.log*
