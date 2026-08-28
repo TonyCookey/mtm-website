@@ -3,7 +3,7 @@ import { DM_Sans, Prata } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/config/site.config";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const title = "Mentor To Marry | Christian Marriage Preparation";
 const description =
@@ -100,7 +100,7 @@ export default function RootLayout({
           />
         ) : null}
         {children}
-        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
