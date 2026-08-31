@@ -16,9 +16,9 @@ export const pricingPlans: PricingPlan[] = [
       "Assessments & Surveys",
       "Browse Limited Profiles",
       "Accountability System",
-      "5 Weekly Chats",
+      // "5 Weekly Chats",
       "Country-based matching pool",
-      "1 Weekly Chat Carryover"
+      // "1 Weekly Chat Carryover"
     ]
   },
   {
@@ -31,8 +31,8 @@ export const pricingPlans: PricingPlan[] = [
       "Browse Unlimited Profiles",
       "Priority Access to Coaches",
       "Access to Global Pool and Profiles",
-      "10 Weekly Chats",
-      "3 Weekly Chat Carryover",
+      // "10 Weekly Chats",
+      // "3 Weekly Chat Carryover",
       "Private Groups"
     ],
     featured: true
@@ -46,7 +46,7 @@ export const pricingPlans: PricingPlan[] = [
       "Dedicated Matchmaker and Coach",
       "Priority Access to PK & PM",
       "Browse Unlimited Profiles",
-      "15 Weekly Chats",
+      // "15 Weekly Chats",
       "Off Platform Introductions",
       "MTM Profile Shield™",
       "Access to Global Profiles",

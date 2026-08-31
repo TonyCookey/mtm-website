@@ -138,7 +138,7 @@ export default function Home() {
         <SectionShell
           eyebrow="Coaches and founders"
           title="Guided by people who understand faith, love, and marriage."
-          intro="Kingsley and Mildred Okonkwo bring pastoral care, practical wisdom, and a deeply human standard of trust to the MTM journey for serious Christian singles in Nigeria, the diaspora, and beyond."
+          intro="Kingsley and Mildred Kingsley-Okonkwo bring practical wisdom, and a deeply human standard of trust to the MTM journey for serious Christian singles in Nigeria, the diaspora, and beyond."
         >
           <div className="media-split">
             <Reveal className="media-split__image">
