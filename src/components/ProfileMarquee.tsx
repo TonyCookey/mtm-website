@@ -5,7 +5,7 @@ export function ProfileMarquee() {
   const profiles = [...profileMarquee, ...profileMarquee];
 
   return (
-    <section className="profiles" id="profiles" aria-label="MTM profiles preview">
+    <section className="profiles" id="profiles" aria-label="M2M profiles preview">
       <div className="profiles__inner">
         <h2>A community of serious Christian singles.</h2>
         <div className="profiles__track-wrap">
@@ -18,7 +18,7 @@ export function ProfileMarquee() {
           </div>
         </div>
         <p className="profiles__copy">
-          These are fictional AI-generated portraits for preview only. MTM protects member privacy while showing the kind
+          These are fictional AI-generated portraits for preview only. M2M protects member privacy while showing the kind
           of diverse, marriage-minded community the process is built to serve.
         </p>
       </div>

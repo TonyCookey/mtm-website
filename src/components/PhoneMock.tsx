@@ -48,7 +48,7 @@ function AnimatedPhoneScreen({ kicker, title, body, screen }: { kicker: string; 
       >
         <div className="phone-screen__status">
           <span>9:41</span>
-          <span>MTM</span>
+          <span>M2M</span>
         </div>
         <div className="phone-screen__body">
           <p>{kicker}</p>

@@ -2,7 +2,7 @@ export const signatureScreens = [
   {
     kicker: "Mentoring",
     title: "Begin with counsel before connection.",
-    body: "MTM starts with guided mentoring so singles slow down, build clarity, and prepare for the responsibility of marriage.",
+    body: "M2M starts with guided mentoring so singles slow down, build clarity, and prepare for the responsibility of marriage.",
     screen: "mentoring"
   },
   {
@@ -14,7 +14,7 @@ export const signatureScreens = [
   {
     kicker: "Marriage",
     title: "Move toward introductions with intention.",
-    body: "When readiness and mutual interest align, MTM supports marriage-minded introductions with accountability and care.",
+    body: "When readiness and mutual interest align, M2M supports marriage-minded introductions with accountability and care.",
     screen: "marriage"
   }
 ] as const;

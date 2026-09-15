@@ -2,7 +2,7 @@ export const faqs = [
   {
     question: "How is Mentor To Marry different from a dating app?",
     answer:
-      "MTM is built around mentoring, readiness, and accountability before matching. The goal is not endless swiping; it is a guided path for Christian singles who are preparing for intentional marriage."
+      "M2M is built around mentoring, readiness, and accountability before matching. The goal is not endless swiping; it is a guided path for Christian singles who are preparing for intentional marriage."
   },
   {
     question: "Why does mentoring come before matching?",
@@ -17,16 +17,16 @@ export const faqs = [
   {
     question: "What does my membership include?",
     answer:
-      "Membership includes access to the MTM preparation flow, mentoring-led guidance, assessments, review, and eligibility for recommendations based on your plan and readiness stage."
+      "Membership includes access to the M2M preparation flow, mentoring-led guidance, assessments, review, and eligibility for recommendations based on your plan and readiness stage."
   },
   {
     question: "Does joining guarantee a match?",
     answer:
-      "No. Membership gives you access to the guided process, but it does not guarantee a match, mutual interest, or marriage. MTM prioritizes responsible recommendations over forced outcomes."
+      "No. Membership gives you access to the guided process, but it does not guarantee a match, mutual interest, or marriage. M2M prioritizes responsible recommendations over forced outcomes."
   },
   {
     question: "Can diaspora or global Christian singles join?",
     answer:
-      "Yes. MTM is designed to support serious Christian singles beyond one city or country, including people in the diaspora, while keeping the process values-led and review-based."
+      "Yes. M2M is designed to support serious Christian singles beyond one city or country, including people in the diaspora, while keeping the process values-led and review-based."
   }
 ] as const;

@@ -10,7 +10,7 @@ const indexLinks = [
 ] as const;
 
 const resourceLinks = [
-  { label: "Register for MTM", href: siteConfig.selfanyUrl, external: true },
+  { label: "Register for M2M", href: siteConfig.selfanyUrl, external: true },
   { label: "Join the free community", href: siteConfig.freeCommunityUrl, external: true },
   { label: "Contact", href: `mailto:${siteConfig.email}` }
 ] as const;
@@ -63,7 +63,7 @@ export function Footer() {
         </div>
 
         <a className="footer__cta" href={siteConfig.selfanyUrl} target="_blank" rel="noopener noreferrer">
-          Register for MTM
+          Register for M2M
           <Check size={16} aria-hidden />
         </a>
       </div>

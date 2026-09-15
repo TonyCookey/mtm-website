@@ -7,7 +7,7 @@ import { Reveal } from "@/components/Reveal";
 const communityBenefits = [
   "Free teachings and materials for singles preparing for marriage",
   "A singles community ready for marriage",
-  "Updates, events, and next steps into MTM"
+  "Updates, events, and next steps into M2M"
 ] as const;
 
 export function FreeCommunitySection() {
@@ -18,7 +18,7 @@ export function FreeCommunitySection() {
           <p className="eyebrow">Singles community</p>
           <h2>Not ready yet? Join the free singles community for people ready for marriage.</h2>
           <p>
-            A free space for Christian singles to learn, connect, receive teachings, and stay close to the MTM journey
+            A free space for Christian singles to learn, connect, receive teachings, and stay close to the M2M journey
             until they are ready for guided membership.
           </p>
           <ul>

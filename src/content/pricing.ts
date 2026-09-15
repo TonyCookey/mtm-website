@@ -10,7 +10,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     name: "Regular",
     tone: "Guided foundation",
-    description: "For singles beginning the MTM mentoring and matching journey with structure and accountability.",
+    description: "For singles beginning the M2M mentoring and matching journey with structure and accountability.",
     benefits: [
       "8 Weeks Mentoring Classes",
       "Assessments & Surveys",
@@ -48,7 +48,7 @@ export const pricingPlans: PricingPlan[] = [
       "Browse Unlimited Profiles",
       // "15 Weekly Chats",
       "Off Platform Introductions",
-      "MTM Profile Shield™",
+      "M2M Profile Shield™",
       "Access to Global Profiles",
     ]
   }

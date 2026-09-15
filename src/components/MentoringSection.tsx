@@ -25,8 +25,8 @@ export function MentoringSection() {
     <SectionShell
       id="mentoring"
       eyebrow="Mentoring first"
-      title="Before matching begins, MTM helps you prepare for the kind of marriage you are praying for."
-      intro="Mentoring is not an add-on. It is the first part of the MTM process, helping serious Christian singles build clarity, maturity, and accountability before recommendations or introductions."
+      title="Before matching begins, M2M helps you prepare for the kind of marriage you are praying for."
+      intro="Mentoring is not an add-on. It is the first part of the M2M process, helping serious Christian singles build clarity, maturity, and accountability before recommendations or introductions."
     >
       <div className="mentoring-grid">
         {mentoringPillars.map((pillar, index) => {

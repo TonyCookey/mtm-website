@@ -12,7 +12,7 @@ export function Pricing() {
       id="membership"
       eyebrow="Membership"
       title="Choose the level of preparation and guidance that fits your season."
-      intro="Each membership path starts with mentoring, then opens access to the MTM matching journey. Current membership and checkout details are handled securely on Selfany."
+      intro="Each membership path starts with mentoring, then opens access to the M2M matching journey. Current membership and checkout details are handled securely on Selfany."
     >
       <div className="pricing-grid">
         {pricingPlans.map((plan, index) => (

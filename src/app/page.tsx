@@ -138,7 +138,7 @@ export default function Home() {
         <SectionShell
           eyebrow="Coaches and founders"
           title="Guided by people who understand faith, love, and marriage."
-          intro="Kingsley and Mildred Kingsley-Okonkwo bring practical wisdom, and a deeply human standard of trust to the MTM journey for serious Christian singles in Nigeria, the diaspora, and beyond."
+          intro="Kingsley and Mildred Kingsley-Okonkwo bring practical wisdom, and a deeply human standard of trust to the M2M journey for serious Christian singles in Nigeria, the diaspora, and beyond."
         >
           <div className="media-split">
             <Reveal className="media-split__image">
@@ -168,7 +168,7 @@ export default function Home() {
               <h2>Join the guided path for Christian singles preparing for marriage.</h2>
               <div className="final-cta__actions">
                 <a className="button button--primary" href={siteConfig.selfanyUrl} target="_blank" rel="noopener noreferrer">
-                  Start your MTM journey
+                  Start your M2M journey
                   <ArrowRight size={18} aria-hidden />
                 </a>
                 <a className="button button--light final-cta__contact" href={`mailto:${siteConfig.email}`}>
