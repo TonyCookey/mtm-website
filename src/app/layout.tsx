@@ -5,9 +5,7 @@ import "./globals.css";
 import { siteConfig } from "@/config/site.config";
 import { Analytics } from "@vercel/analytics/next";
 
-const title = "Mentor To Marry | Christian Marriage Preparation";
-const description =
-  "Mentor To Marry is a guided path for Christian singles preparing for intentional marriage through mentoring, review, and matching.";
+const { title, description } = siteConfig.seo;
 const image = "/images/community-hero.jpg";
 
 const dmSans = DM_Sans({
@@ -90,6 +88,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <link rel="describedby" href={siteConfig.url + "/llms.txt"} type="text/plain" />
+      </head>
       <body className={`${dmSans.variable} ${prata.variable}`}>
         {plausibleDomain ? (
           <Script

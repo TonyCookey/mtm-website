@@ -1,7 +1,12 @@
 export const siteConfig = {
   name: "Mentor To Marry",
-  domain: "mentortomarry.com",
-  url: "https://mentortomarry.com",
+  domain: "www.mentortomarry.com",
+  url: "https://www.mentortomarry.com",
+  seo: {
+    title: "Christian Matchmaking & Marriage Preparation | Mentor To Marry",
+    description:
+      "A guided community for Christian singles in Nigeria and the diaspora, with marriage mentoring, readiness assessments, and intentional matching."
+  },
   selfanyUrl: "https://selfany.com/MTM",
   freeCommunityUrl: "https://selfany.com/RFMSC",
   email: "hello@mentortomarry.com",

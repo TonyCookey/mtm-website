@@ -6,19 +6,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: siteConfig.url,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1
     },
     {
       url: `${siteConfig.url}/legal`,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7
     },
     ...publicLegalDocuments.map((document) => ({
       url: `${siteConfig.url}/legal/${document.slug}`,
-      lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.6
     }))

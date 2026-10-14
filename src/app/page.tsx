@@ -8,6 +8,7 @@ import { MentoringSection } from "@/components/MentoringSection";
 import { Pricing } from "@/components/Pricing";
 import { ProfileMarquee } from "@/components/ProfileMarquee";
 import { Reveal } from "@/components/Reveal";
+import { ReviewsSection } from "@/components/ReviewsSection";
 import { SectionShell } from "@/components/SectionShell";
 import { SignatureScroll } from "@/components/SignatureScroll";
 import { assets } from "@/content/assets";
@@ -22,6 +23,7 @@ const structuredData = [
     "@type": "Organization",
     "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.name,
+    alternateName: "M2M",
     url: siteConfig.url,
     logo: `${siteConfig.url}/favicons/mtm.svg`,
     email: siteConfig.email,
@@ -31,18 +33,31 @@ const structuredData = [
       email: siteConfig.email,
       availableLanguage: ["English"]
     },
-    areaServed: ["Nigeria", "Diaspora", "Global"]
+    areaServed: { "@type": "Place", name: "Worldwide" }
   },
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${siteConfig.url}/#website`,
     name: siteConfig.name,
+    alternateName: "M2M",
     url: siteConfig.url,
+    description: siteConfig.seo.description,
     publisher: {
       "@id": `${siteConfig.url}/#organization`
     },
     inLanguage: "en"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${siteConfig.url}/#webpage`,
+    url: siteConfig.url,
+    name: siteConfig.seo.title,
+    description: siteConfig.seo.description,
+    inLanguage: "en",
+    isPartOf: { "@id": `${siteConfig.url}/#website` },
+    about: { "@id": `${siteConfig.url}/#service` }
   },
   {
     "@context": "https://schema.org",
@@ -61,25 +76,30 @@ const structuredData = [
     "@context": "https://schema.org",
     "@type": "Service",
     "@id": `${siteConfig.url}/#service`,
-    name: "Christian marriage preparation and mentoring",
+    name: "Christian marriage preparation and guided matchmaking",
+    description: siteConfig.seo.description,
     serviceType: "Mentoring-led Christian marriage preparation and matching",
     provider: {
       "@id": `${siteConfig.url}/#organization`
     },
-    areaServed: ["Nigeria", "Diaspora", "Global"],
+    areaServed: { "@type": "Place", name: "Worldwide" },
     audience: {
       "@type": "Audience",
       audienceType: "Christian singles preparing for intentional marriage"
     },
-    offers: {
+    hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Mentor To Marry membership plans",
       itemListElement: pricingPlans.map((plan) => ({
         "@type": "Offer",
         name: `${plan.name} membership`,
-        description: plan.description,
         url: siteConfig.selfanyUrl,
-        availability: "https://schema.org/InStock"
+        itemOffered: {
+          "@type": "Service",
+          name: `${plan.name} membership`,
+          description: plan.description,
+          provider: { "@id": `${siteConfig.url}/#organization` }
+        }
       }))
     }
   }
@@ -152,6 +172,8 @@ export default function Home() {
             </Reveal>
           </div>
         </SectionShell>
+
+        <ReviewsSection />
 
         <Pricing />
 
