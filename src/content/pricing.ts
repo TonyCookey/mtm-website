@@ -33,7 +33,7 @@ export const pricingPlans: PricingPlan[] = [
       "Access to Global Pool and Profiles",
       // "10 Weekly Chats",
       // "3 Weekly Chat Carryover",
-      "Private Groups"
+      // "Private Groups"
     ],
     featured: true
   },
